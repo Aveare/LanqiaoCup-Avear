@@ -1,0 +1,51 @@
+# 统一行尾与二进制判定。core.autocrlf 因机器而异，这里固定下来避免来回抖动。
+* text=auto
+
+# ---- 二进制：不做行尾转换，不参与文本 diff ----
+*.pdf     binary
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.gif     binary
+*.bmp     binary
+*.doc     binary
+*.docx    binary
+*.xls     binary
+*.xlsx    binary
+*.ppt     binary
+*.pptx    binary
+*.zip     binary
+*.rar     binary
+*.7z      binary
+*.exe     binary
+*.dll     binary
+*.sys     binary
+*.vxd     binary
+*.cat     binary
+*.hex     binary
+*.bin     binary
+*.lib     binary
+*.obj     binary
+*.pdsprj  binary
+*.pdsbak  binary
+*.db      binary
+*.sqlite  binary
+
+# ---- 源码 / 工程：仓库按 LF 存储，检出为 CRLF（Keil 与 Windows 编辑器习惯）----
+*.c       text eol=crlf
+*.h       text eol=crlf
+*.s       text eol=crlf
+*.a51     text eol=crlf
+*.ini     text eol=crlf
+*.md      text eol=crlf
+*.txt     text eol=crlf
+*.uvproj  text eol=crlf
+*.uvopt   text eol=crlf
+*.uvgui.* text eol=crlf
+
+# ---- 语言统计口径 ----
+*.uvproj  linguist-language=C
+*.uvopt   linguist-generated=true
+*.uvgui.* linguist-generated=true
+*.pdsprj  linguist-generated=true
+*.pdsbak  linguist-generated=true

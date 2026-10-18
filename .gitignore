@@ -1,4 +1,9 @@
-# ---- OS / editor junk ----
+# ===================================================================
+# LanqiaoCup-Avear —— 只收代码、笔记与小文档
+# 大体积二进制（视频 / 安装包 / 压缩包 / 驱动 / 编译产物）一律不入库
+# ===================================================================
+
+# ---- 操作系统与编辑器 ----
 Thumbs.db
 ehthumbs.db
 desktop.ini
@@ -6,8 +11,9 @@ desktop.ini
 ~$*
 *.swp
 *.tmp
+*.lnk
 
-# ---- Videos (large, not source material) ----
+# ---- 视频（约 1 GB，不进代码库）----
 *.mp4
 *.avi
 *.mov
@@ -15,21 +21,21 @@ desktop.ini
 *.wmv
 *.flv
 
-# ---- Installers / images ----
+# ---- 安装包 / 磁盘镜像 ----
 *.exe
 *.msi
 *.iso
 *.dmg
 *.pkg
 
-# ---- Archives ----
+# ---- 压缩包 ----
 *.zip
 *.rar
 *.7z
 *.tar
 *.gz
 
-# ---- Keil / MDK build artifacts & per-user GUI state ----
+# ---- Keil / MDK 编译产物 ----
 *.obj
 *.o
 *.d
@@ -45,7 +51,6 @@ desktop.ini
 *.dep
 *.iex
 *.plg
-*.uvgui.*
 *.uvopt
 *.bak
 *.__i
@@ -54,3 +59,30 @@ Objects/
 Listings/
 DebugConfig/
 RTE/
+
+# ---- Keil uVision 个人 GUI 状态（<工程>.<用户名>）----
+*.uvgui.*
+*.Avear
+*.Lenovo
+*.Xifeng
+*.haze
+
+# ---- Proteus 自动备份 ----
+*.pdsbak
+
+# ---- 赛点资源包里的工具：驱动、日志、串口助手 ----
+04DP2026_SCM赛点资源包（26年）/Tools/
+*.log
+*.sys
+*.dll
+*.vxd
+*.cat
+*.inf
+
+# ---- IDE / 运行时 ----
+.vscode/
+.idea/
+.vs/
+__pycache__/
+*.pyc
+node_modules/
