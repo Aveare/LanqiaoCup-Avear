@@ -1,0 +1,39 @@
+#include "smg.h"
+
+code unsigned char Seg_Table[] = 
+{
+0xc0, //0
+0xf9, //1
+0xa4, //2
+0xb0, //3
+0x99, //4
+0x92, //5
+0x82, //6
+0xf8, //7
+0x80, //8
+0x90, //9
+0x88, //A
+0x83, //b
+0xc6, //C
+0xa1, //d
+0x86, //E
+0x8e, //F
+0xbf,
+0xff,
+0x89,
+0x8c
+};
+
+void smg(uchar *temp,uchar *dot,uchar pos)
+{
+	P0=0xff;
+	hc573(7);
+	P0=0x01<<pos;
+	hc573(6);
+	if(dot[pos]==0)
+		P0=Seg_Table[temp[pos]];
+	else
+		P0=Seg_Table[temp[pos]] & 0x7f;
+	hc573(7);
+	
+}

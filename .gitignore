@@ -1,0 +1,56 @@
+# ---- OS / editor junk ----
+Thumbs.db
+ehthumbs.db
+desktop.ini
+.DS_Store
+~$*
+*.swp
+*.tmp
+
+# ---- Videos (large, not source material) ----
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wmv
+*.flv
+
+# ---- Installers / images ----
+*.exe
+*.msi
+*.iso
+*.dmg
+*.pkg
+
+# ---- Archives ----
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+# ---- Keil / MDK build artifacts & per-user GUI state ----
+*.obj
+*.o
+*.d
+*.m51
+*.lst
+*.hex
+*.bin
+*.crf
+*.axf
+*.lnp
+*.sct
+*.map
+*.dep
+*.iex
+*.plg
+*.uvgui.*
+*.uvopt
+*.bak
+*.__i
+build_log.htm
+Objects/
+Listings/
+DebugConfig/
+RTE/

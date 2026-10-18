@@ -1,0 +1,5 @@
+#include <STC15F2K60S2.H>
+
+void UartInit(void);
+void Sendbyte(unsigned char dat);
+void SendString(char *s);
